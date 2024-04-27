@@ -1,0 +1,9 @@
+in java Public Class Name Should be File Name (Means File:Demo.java Then "Public class Demo{main{}}")
+Class Name Start With First Latter (Ex.:Demo,Hello)
+in java file main"(public static void main(String[] args))" Method is Entry Point of File
+in Java Every Statement End With SemiColon(;) (if not Add Semicolon Then Give Error compile Time)
+Java is Unicode Language
+
+only Work Pass By Value
+in Primitive Data type(int,byte,short,long,float,double) just pass By Value
+in object,Complex Data Type(String...) pass By Value of That reference Variable
