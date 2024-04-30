@@ -1,0 +1,22 @@
+
+arr = [1,4,87,99,100,999] => Ascending Order
+arr = [6049,4000,871,99,10,-999] => Descending Order
+
+To Applied Binary Search First Thing Array is Sort
+
+start=0;end=n;(n=>Array last index)
+Step-1:Find The Middle Element Of Array
+find Middle Element => Formula 1: [ (start + end) / 2]
+                       Formula 2: [ start + (end - start) / 2 ]
+Step-2:if target > middle-Element => Search in the right else search in the left
+Step-3:if Middle element == target => Target Element is found
+
+
+Why Binary Search?
+
+1 = N / 2^k
+N = 2^k
+logN = log(2^k)
+logN = k log2
+k = logN / log2
+k = logN (answer) (Time Complexity)
