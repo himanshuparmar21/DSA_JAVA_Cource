@@ -1,0 +1,5 @@
+When Given Array Number From range 1 to N then Use Cyclic Sort
+
+If range [0,N] then every element will be at index == value
+
+If range [1,N] then every element will be at index == value - 1
