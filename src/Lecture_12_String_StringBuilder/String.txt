@@ -1,0 +1,19 @@
+String is Sequence of Collection Character
+String can be defined Using "String" KeyWord
+Ex.: String name = "Himanshu";
+
+
+String Store in String-Pool (String Pool is Separate Memory inside of Heap Memory)
+
+String a = "Hello";
+String b = "Hello";
+Above Given Both String Point To Same Object in String Pool
+
+String is Immutable(String cannot change)
+
+Ex.: String a = "Himanshu";
+If Change String a Like [a = "Himanshu Parmar"]
+This Not Change "Himanshu" To "Himanshu Parmar" That Just Create new Object[Himanshu Parmar] and point that Object
+
+
+Anytime we Print Then print is Called ValueOf Method and valueOf Method Call toString Method and Some Operation Perform

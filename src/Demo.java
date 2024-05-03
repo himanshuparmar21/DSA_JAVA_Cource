@@ -3,29 +3,19 @@ import java.util.Arrays;
 public class Demo {
     public static void main(String[] args) {
 //        System.out.println(Arrays.toString(count("abcABC123@#$")));
-        int[] arr = {1,3,4,2,2};
-
-        int ans = 0;
-        for(int i=0;i<arr.length;i++){
-            ans ^= (arr[i] ^ i+1);
-        }
-        System.out.println(ans ^ arr.length);
+        System.out.println(compareVersion("0.1","1.1"));
     }
-    static int[] count (String s)
-    {
-        int upper = 0,lower=0,special=0,number=0;
-        for(char ch : s.toCharArray()){
-            if(Character.isUpperCase(ch)){
-                upper++;
-            }else if(Character.isLowerCase(ch)){
-                lower++;
-            }else if(Character.isDigit(ch)){
-                number++;
-            }else{
-                special++;
+        static int compareVersion(String version1, String version2) {
+            String[] s1 = version1.split("\\.");
+            String[] s2 = version2.split("\\.");
+
+            for(int i=0;(i<s1.length && i<s2.length);i++){
+                if(s1[i].compareTo(s2[i]) == 1){
+                    return 1;
+                }else if(s1[i].compareTo(s2[i]) == -1){
+                    return -1;
+                }
             }
-        }
-        System.out.println(upper+lower+number+special);
-        return new int[]{upper,lower,number,special};
+            return 0;
     }
 }
