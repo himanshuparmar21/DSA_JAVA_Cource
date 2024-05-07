@@ -1,0 +1,20 @@
+How To Solve Any Pattern?
+
+Step-1:Outer For Loop is Number of Row
+(number of lines == number of rows == number of times outer loop will run)
+
+Step-2:Identified for every row number & how many column are there & types of element in column
+
+Step-3:What do you need to print
+
+
+
+----------->Column
+|   *
+|   * *
+|   * * *
+|   * * * *
+|   * * * * *
+R
+o
+w
