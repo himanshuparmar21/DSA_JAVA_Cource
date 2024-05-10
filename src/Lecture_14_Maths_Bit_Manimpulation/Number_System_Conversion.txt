@@ -1,0 +1,27 @@
+1:Conversion from decimal to base b
+ keep dividing by base and take reminder and write reverse(opposite)
+
+ Ex.:(17)10 to base 2
+    2 / 17
+    2 / 17 -> 1
+    2 / 4 -> 0
+    2 / 2 -> 0
+        1 -> 0
+
+    answer : (10001)2
+
+2:Convert any base b to Decimal
+
+multiply and add with power of base with digit
+
+Ex.:(111)2 => (7)10
+
+1*2^2+1*2^1+1*2^0=>4+2+1=>7
+
+EX.:(21)8 = (17)10
+
+2*8^1 + 1*8^0 => 16 + 1 => 17
+
+
+How to convert base 2 to base 8?
+first convert base 10 and base 10 to base 8

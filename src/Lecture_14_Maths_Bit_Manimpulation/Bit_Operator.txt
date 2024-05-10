@@ -1,0 +1,50 @@
+Bit Operators:
+
+1:AND(&):If Both Value is True Then Output is Also True otherwise false
+
+a b a&b
+0 0  0
+0 1  0
+1 0  0
+1 1  1
+
+when & 1 with any number then number not change
+
+2:OR(|):If One Input is True then output is also true otherwise false
+
+a b a|b
+0 0  0
+0 1  1
+1 0  1
+1 1  1
+
+3:XOR(^):(If and only if): If all value same then False else true
+
+a b a^b
+0 0  0
+0 1  1
+1 0  1
+1 1  0
+
+a ^ 1 = exclusive a(ā)
+a ^ 0 = a
+a ^ a = 0
+
+4:Complemet(~)
+
+a = 0110
+~a = 1001
+
+5:Left Shift Operator
+
+a << 1 = 2a
+1010 << 1 => 10100
+
+a << b = a * 2^b
+
+6:right Shift Operator
+
+a >> 1 = a/2
+1010 >> 1 => 101
+
+a >> b = a / 2^b

@@ -1,0 +1,36 @@
+Negative of a number in a Binary form:
+
+1 byte = 8 bits
+
+Store 10 Like: |0|0|0|0|1|0|1|0| (1 byte)
+Last bit is less significant bit(LSB) and First bit is Most significant bit(MSB)
+Most significant bit tell us is Negative or Positive number
+1 => Negative(-)
+0 => Positive(+)
+
+
+Steps:
+First Complement of Number
+and Then Add 1 to it's Number
+(This is Called Two complement Method)
+
+(10)(Base 10) => (00001010)(Base 2)
+Complement: 11110101
+Add 1     : 00000001
+--------------------
+-10       : 11110110 (Base 2) (Negative Number 10)
+
+
+
+Range Of Number
+
+ 1 Byte => In 1 Byte Total 8 Bit, and We store 1 bit 0,1 So total 2*2...8Times => 2^8 => 256(Total Number Store)
+ Actual number is store in bits = n-1
+ in 1 byte = 7 bits
+ Total can make from 7 bits = 2^7 = 128
+ (-128 to 128 = Total 257 Bcz 0 include)
+ So,actual Range is -128 To 127
+ (-0 = 0)
+
+
+ Formula For Range: For n bits => -2^n-1 To (2^n-1)-1
