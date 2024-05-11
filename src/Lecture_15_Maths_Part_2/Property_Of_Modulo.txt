@@ -1,0 +1,6 @@
+1.: (a+b) % m = ((a%m) + (b%m)) % m
+2.: (a-b) % m = ((a%m) - (b%m) + m) % m
+3.: (a*b) % m = ((a%m) * (b%m)) % m
+4.: (a/b) % m = ((a%m) * (b^-1 %m)) % m
+5.: (a%m) % m = a % m
+6.: m^a % m = 0 (For all x Belong zto All Positive Integer)
