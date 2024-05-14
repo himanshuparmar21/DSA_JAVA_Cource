@@ -36,6 +36,7 @@ public class Q5_Factor {
     }
 
 //    space and time both O(sqrt(n))
+    // Use This Method to Print Ascending Order
     static void factor3(int n){
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 1; i <= Math.sqrt(n) ; i++) {
