@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Demo{
     public static void main(String[] args){
-        System.out.println(999 * Math.log(999));
-        System.out.println(Math.pow(999,2));
+        double temp = Math.log10(18486);
+        System.out.println(Math.floor(Math.exp(temp)));
     }
 }
