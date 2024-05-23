@@ -4,10 +4,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(isPowerOfTwo(18));
-    }
-    static boolean isPowerOfTwo(int n) {
-        if(n==0) return false;
-        return ((n==1) || (n%2==0 && isPowerOfTwo(n/2)));
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        double d = sc.nextDouble();
+        sc.nextLine();
+        String s = sc.nextLine();
+
+        System.out.println(i + d);
+        System.out.println(d + d);
+        System.out.println("HackerRank " + s);
     }
 }

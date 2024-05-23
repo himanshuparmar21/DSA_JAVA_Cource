@@ -1,0 +1,6 @@
+Permutation means Rearrange the String
+
+Ex.: "ab" => [ab,ba]
+
+
+Total Permutation => (Total Size of String)! [Above Ex. Size : 2!]
