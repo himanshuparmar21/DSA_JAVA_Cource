@@ -1,17 +1,17 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import javax.swing.*;
+import java.util.*;
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int i = sc.nextInt();
-        double d = sc.nextDouble();
-        sc.nextLine();
-        String s = sc.nextLine();
-
-        System.out.println(i + d);
-        System.out.println(d + d);
-        System.out.println("HackerRank " + s);
+        System.out.println(areRotations("mightandmagic","andmagicmigth"));
+    }
+    public static boolean areRotations(String s1, String s2 )
+    {
+        if(s1.length()!=s2.length()) return false;
+        for(int i=1;i<s1.length();i++){
+            String temp = s2.substring(i) + s2.substring(0,i);
+            if(temp.equals(s1)) return true;
+        }
+        return false;
     }
 }

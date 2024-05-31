@@ -1,6 +1,7 @@
 package Recursion.Permutation;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Permutation_ArrayList {
@@ -9,7 +10,9 @@ public class Permutation_ArrayList {
         System.out.print("Enter String:");
         String s = sc.next();
 
-        System.out.println(permutation("",s));
+        ArrayList<String> ans = permutation("",s);
+        Collections.sort(ans);
+        System.out.println(ans);
     }
     static ArrayList<String> permutation(String ans,String s){
         if(s.isEmpty()){

@@ -7,7 +7,6 @@ import static Helper_Function.Input_Integer_Array.inputArray;
 
 public class Bubble_Sinking_Exchange_Sort {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         int[] arr = inputArray();
         bubbleSort(arr);
         System.out.println(Arrays.toString(arr));

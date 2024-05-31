@@ -2,8 +2,8 @@ package Lecture_10_Binary_Search_Problem;
 
 public class Q9_Rotation_Array {
     public static void main(String[] args) {
-        int[] arr = {4,5,6,7,0,1,2};
-        System.out.println(countRotations(arr));
+        int[] arr = {1,2,3,4,5};
+        System.out.println(findPivot(arr));
     }
 
     private static int countRotations(int[] arr) {
@@ -19,10 +19,10 @@ public class Q9_Rotation_Array {
             int mid = start + (end - start) / 2;
             // 4 cases over here
             if (mid < end && arr[mid] > arr[mid + 1]) {
-                return mid;
+                return mid+1;
             }
             if (mid > start && arr[mid] < arr[mid - 1]) {
-                return mid-1;
+                return mid;
             }
             if (arr[mid] <= arr[start]) {
                 end = mid - 1;
@@ -30,7 +30,7 @@ public class Q9_Rotation_Array {
                 start = mid + 1;
             }
         }
-        return -1;
+        return start;
     }
 
     // use this when arr contains duplicates

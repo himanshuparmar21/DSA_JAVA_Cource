@@ -2,9 +2,14 @@ package Recursion.Strings;
 
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Q4_SubSequence_ArrayList {
+
+    Q4_SubSequence_ArrayList(){
+        super();
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter String:");

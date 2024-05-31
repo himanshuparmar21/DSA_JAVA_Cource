@@ -8,13 +8,14 @@ public class Q12_Find_Set_Bit {
         System.out.print("Enter Number:");
         int n = sc.nextInt();
 
-        System.out.println(Method1(n));
+//        System.out.println(Method1(n));
 
 //        Method 2
         int count = 0;
         while(n > 0){
             count++;
-            n -= (n & -n); // n = n & (n-1);
+//            n -= (n & -n);
+             n = n & (n-1);
         }
         System.out.println(count);
     }
