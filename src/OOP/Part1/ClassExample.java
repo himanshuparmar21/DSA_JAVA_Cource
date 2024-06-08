@@ -2,9 +2,9 @@ package OOP.Part1;
 
 public class ClassExample {
     public static void main(String[] args) {
-        Student s = new Student();
+        Student1 s = new Student1();
         s.name = "student1";
-        Student s1 = new Student();
+        Student1 s1 = new Student1();
         s1.name = "student2";
         System.out.println(s.toString());
         s.Name();
@@ -12,7 +12,7 @@ public class ClassExample {
     }
 }
 
-class Student{
+class Student1{
     int roll ;
     String name;
     void Name(){
