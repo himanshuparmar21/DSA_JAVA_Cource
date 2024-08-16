@@ -20,4 +20,4 @@ public class PrintNumber {
     }
 }
 
-//In this all Function Name is different but Body is All Function is same (Exactly Duing Same Thing)
+//In this all Function Name is different but Body is All Function is same (Exactly During Same Thing)

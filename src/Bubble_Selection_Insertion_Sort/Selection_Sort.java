@@ -6,7 +6,8 @@ import static Helper_Function.Input_Integer_Array.inputArray;
 
 public class Selection_Sort {
     public static void main(String[] args) {
-        int[] arr = inputArray();
+//        int[] arr = inputArray();
+        int[] arr = {5,3,10,1,0};
         selectionSort(arr);
         System.out.println(Arrays.toString(arr));
     }

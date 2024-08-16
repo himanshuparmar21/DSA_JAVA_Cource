@@ -6,11 +6,11 @@ import static Helper_Function.Input_Integer_Array.inputArray;
 
 public class Quick_Sort {
     public static void main(String[] args) {
-        int[] arr = inputArray();
-
+//        int[] arr = inputArray();
+        int[] arr = {5,4,3,2,1};
         sort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
-        Arrays.sort(arr);
+//        Arrays.sort(arr);
     }
     static void sort(int[] arr,int low,int high){
         if(low >= high){
@@ -20,7 +20,7 @@ public class Quick_Sort {
         int s = low;
         int e = high;
         int mid = s + (e - s) / 2;
-        int pivot = arr[mid];
+        int pivot = arr[s];
 
 
         while (s <= e){

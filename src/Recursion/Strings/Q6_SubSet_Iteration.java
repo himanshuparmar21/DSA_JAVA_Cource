@@ -7,8 +7,8 @@ import static Helper_Function.Input_Integer_Array.inputArray;
 
 public class Q6_SubSet_Iteration {
     public static void main(String[] args) {
-        int[] arr = inputArray();
-
+//        int[] arr = inputArray();
+        int[] arr = {1,2,3};
         System.out.println(subSet(arr));
     }
     static List<List<Integer>> subSet(int[] arr){

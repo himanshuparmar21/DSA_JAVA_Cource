@@ -1,7 +1,6 @@
 package Lecture_7_Array_ArrayList;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ArrayList_Examples {
     public static void main(String[] args) {

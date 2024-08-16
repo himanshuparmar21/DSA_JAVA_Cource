@@ -13,7 +13,6 @@ public class Letter_Combination_Of_Phone_Number {
     }
     static ArrayList<String> pad(String ans, String s){
         if(s.isEmpty()){
-//            System.out.println(ans);
             ArrayList<String> temp = new ArrayList<>();
             temp.add(ans);
             return temp;
