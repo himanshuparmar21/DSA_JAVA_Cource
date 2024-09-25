@@ -7,8 +7,8 @@ import static Helper_Function.Input_Integer_Array.inputArray;
 public class Cyclic_Sort {
     public static void main(String[] args) {
 //        int[] arr = inputArray();
-        int[] arr = new int[]{3,1,5,4,2};
-        cyclicSort(arr);
+        int[] arr = new int[]{1,2,3,4};
+        cyclicSort1(arr);
         System.out.println(Arrays.toString(arr));
     }
 //    Use 0 base index
