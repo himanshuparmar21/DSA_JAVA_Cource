@@ -3,7 +3,7 @@ package Sliding_Window;
 public class BinarySubarraysWithSum {
     public static void main(String[] args) {
         int[] arr = {0,0,0,0,0};
-        System.out.println(SlidingWindow(arr,0));
+        System.out.println(numSubarraysWithSum(arr,0));
     }
     public static int BruteForce(int[] nums, int goal) {
         int count = 0;
@@ -19,20 +19,23 @@ public class BinarySubarraysWithSum {
         }
         return count;
     }
-    public static int SlidingWindow(int[] nums,int goal){
+    public static int numSubarraysWithSum(int[] nums, int goal) {
+        return atMostKsum(nums,goal) - atMostKsum(nums,goal-1);
+    }
+    public static int atMostKsum(int[] nums,int goal){
+        if(goal<0) return 0; // This is Bcz Array Contains only 0,1 That Why Can not Find <0 sum
         int start = 0;
+        int ans = 0;
 
         int sum = 0;
-        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
 
-        for (int num : nums) {
-            sum += num;
-            if (sum == goal) count++;
-
-            while (sum > goal) {
+            while (sum > goal){
                 sum -= nums[start++];
             }
+            ans += (i - start + 1);
         }
-        return count;
+        return ans;
     }
 }

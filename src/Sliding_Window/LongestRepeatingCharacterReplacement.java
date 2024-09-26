@@ -1,7 +1,7 @@
 package Sliding_Window;
 
 import java.util.HashMap;
-
+// https://leetcode.com/problems/longest-repeating-character-replacement/
 public class LongestRepeatingCharacterReplacement {
     public static void main(String[] args) {
         String s = "AABABBA";
