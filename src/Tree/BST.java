@@ -54,7 +54,7 @@ public class BST {
             node.right = insert(node.right,value);
         }
 
-        node.height = Math.max(height(node.left),height(node.right)) + 1;
+//        node.height = Math.max(height(node.left),height(node.right)) + 1;
 
         return node;
     }
