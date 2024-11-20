@@ -1,7 +1,6 @@
-package Bubble_Selection_Insertion_Sort;
+package Sorts;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 import static Helper_Function.Input_Integer_Array.inputArray;
 
